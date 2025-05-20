@@ -1,0 +1,23 @@
+[project]
+name = "aletheia"
+version = "0.1.0"
+description = ""
+authors = [
+    { name = "MGabeD@Hephaestus", email = "mason.g.denton@vanderbilt.edu" }
+]
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "fastapi-users[sqlalchemy,oauth]",
+    "fastapi",
+    "python-dotenv",
+    "uvicorn[standard]",
+    "asyncpg",
+]
+
+[build-system]
+requires = ["setuptools>=67.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
